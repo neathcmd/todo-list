@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="heading">
+        <span>Todo list</span>
+        <span
+          aria-hidden="true"
+          aria-label="A white piece of paper with text written on it by a yellow pencil"
+          >📝</span
+        >
+      </h1>
+      <form id="add-todo-form">
+        <div class="form-group">
+          <input
+            id="new-todo-input"
+            type="text"
+            class="input"
+            placeholder="Anything to do today?"
+          />
+          <button class="button form-group__submit">Add</button>
+        </div>
+      </form>
+      <ul id="todos" class="todos"></ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
